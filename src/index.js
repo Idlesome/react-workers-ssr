@@ -30,7 +30,7 @@ const header = `<!DOCTYPE html>
     <div id="app">`
 
 const footer = `</div>
-<script src="/script.js"></script>
+<script src="/script.js" type="text/javascript"></script>
 </body>
 </html>`
 
@@ -59,7 +59,11 @@ async function handleRequest(event) {
   // Send asset
   try {
     const script = await REACT_SSR.get('script.js')
-    return new Response(script)
+    return new Response(script, {
+      headers: {
+        'Content-Type': 'text/javascript',
+      },
+    })
   } catch (e) {
     console.log(e)
     // // if an error is thrown try to serve the asset at 404.html

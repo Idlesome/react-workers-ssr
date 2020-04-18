@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "build": "webpack",
+    "dev": "wrangler preview --watch",
     "preview": "npm run build && node ./scripts/open-preview.js",
     "kv:upload": "wrangler kv:key put --binding=REACT_SSR 'script.js' ./build/worker.js --path"
   },
