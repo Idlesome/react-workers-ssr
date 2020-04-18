@@ -2,10 +2,6 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import ReactDOMServer from 'react-dom/server'
 
-import { getAssetFromKV } from '@cloudflare/kv-asset-handler'
-
-const DEBUG = true
-
 function CounterButton() {
   const [counter, setCounter] = useState(0)
   return (
