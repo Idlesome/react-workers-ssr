@@ -1,0 +1,11 @@
+name = "workers-test"
+type = "webpack"
+account_id = "786e56421522c0cd1b1977e311f0c6db"
+workers_dev = false
+route = "react-ssr.floatingdown.stream/*"
+zone_id = "f8925ca4aa75911e67038de912d47ed6"
+webpack_config = "webpack.config.js"
+
+kv-namespaces = [
+	 { binding = "REACT_SSR", id = "c4d852f209b740a4b4a246fa2fd202ce" }
+]
