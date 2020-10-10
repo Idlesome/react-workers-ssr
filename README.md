@@ -21,10 +21,12 @@ Which essentially runs:
 
 ### TODO:
 
-- Improve/stabilise build pipeline
+- Performance & SEO benchmark
+- Figure out how to fetch and render server side
+- Improve/stabilise build
 - Make React build produce a script.js, it should not expose server script
 - Fix getAssetFromKV
 - The server project then inherits the React project
-- Figure out how to fetch and render server side
 - Caching
 - S3 for images?
+- Add smart routing
